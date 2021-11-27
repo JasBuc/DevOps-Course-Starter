@@ -5,20 +5,17 @@ from todo_app.data.trello_items import get_done_items, get_to_do_items, add_item
 app = Flask(__name__)
 app.config.from_object(Config())
 
-
 @app.route('/')
 def index():
     to_do_items = get_to_do_items()
     done_items = get_done_items()
     return render_template('index.html', to_do_items=to_do_items, done_items=done_items)
 
-
 @app.route('/submit', methods=['POST'])
 def addItem():
     newItem = request.form.get('title')
     add_item(newItem)
     return redirect('/')
-
 
 @app.route('/completeItem<id>')
 def completeItem(id):
