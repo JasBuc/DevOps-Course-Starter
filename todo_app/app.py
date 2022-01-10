@@ -9,7 +9,7 @@ app.config.from_object(Config())
 def index():
     to_do_items = get_to_do_items()
     done_items = get_done_items()
-    return render_template('index.html', to_do_items=to_do_items, done_items=done_items)
+    return render_template('index.html', items=to_do_items+done_items)
 
 @app.route('/submit', methods=['POST'])
 def addItem():
@@ -18,6 +18,6 @@ def addItem():
     return redirect('/')
 
 @app.route('/completeItem<id>')
-def completeItem(id):
+def complete_item_route(id):
     complete_item(id)
     return redirect('/')

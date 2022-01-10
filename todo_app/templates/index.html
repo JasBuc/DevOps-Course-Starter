@@ -11,13 +11,12 @@
   <div class="col-md-12">
     <h2>Items</h2>
     <ul class="list-group mb-4">
-      {% for to_do_item in to_do_items %}
-      <li>{{to_do_item.status}} - {{to_do_item.name}}
-        <a href="{{ url_for('completeItem',id=to_do_item.id) }}">Mark as done</a>
+      {% for item in items %}
+      <li>{{item.status}} - {{item.name}}
+        {% if item.status == 'To Do'%}
+          <a href="{{ url_for('complete_item_route',id=item.id) }}">Mark as done</a>
+        {% endif %}
       </li>
-      {% endfor %}
-      {% for done_item in done_items %}
-      <li>{{done_item.status}} - {{done_item.name}}</li>
       {% endfor %}
     </ul>
   </div>
