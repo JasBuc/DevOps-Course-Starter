@@ -20,10 +20,9 @@ def client():
 def test_index_page(monkeypatch, client): 
     # Replace call to requests.get(url) with our own function 
     monkeypatch.setattr(requests, 'get', get_lists_stub) 
-    response = client.get('/') 
+    response = client.get('/')
     assert response.status_code == 200 
     assert 'Test card 1' in response.data.decode()
-    # TODO - Add more assertions
 
 class StubResponse(): 
     def __init__(self, fake_response_data): 
