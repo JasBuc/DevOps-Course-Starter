@@ -41,7 +41,7 @@ def complete_item(id):
     return requests.put(f"{BASE_URL}cards/{id}", params=params)
 
 def create_trello_board(name):
-    params = {'key': os.getenv('TRELLO_API_KEY'), 'token': os.getenv('TRELLO_TOKEN'), 'name': name}
+    params = {'key': os.getenv('TRELLO_API_KEY'), 'token': os.getenv('TRELLO_TOKEN'), 'name': name, 'idOrganization': os.getenv('TRELLO_ORGANIZATION_ID')}
     response = requests.post(f"{BASE_URL}boards", params=params)
     return response.json()['id']
 

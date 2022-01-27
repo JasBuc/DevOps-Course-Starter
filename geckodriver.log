@@ -398,3 +398,44 @@ DevTools listening on ws://localhost:51136/devtools/browser/82a26ffb-2a54-474f-8
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1643303324162	geckodriver	INFO	Listening on 127.0.0.1:58313
+1643303327248	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58314" "-no-remote" "-profile" "C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofileSMkfxk"
+1643303328370	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofileSMkfxk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58314/devtools/browser/6556e355-2863-4e33-892b-c6c927f803c7
+1643303331643	Marionette	INFO	Listening on port 58319
+1643303332051	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643303332683	Marionette	INFO	Stopped listening on port 58319
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643303392191	geckodriver	INFO	Listening on 127.0.0.1:58395
+1643303395271	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58396" "-no-remote" "-profile" "C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofile7ctiOw"
+1643303395843	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofile7ctiOw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58396/devtools/browser/3299bcad-7240-4047-86a9-9492c3ced237
+1643303398361	Marionette	INFO	Listening on port 58401
+1643303398445	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643303401553	Marionette	INFO	Stopped listening on port 58401
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643303876456	geckodriver	INFO	Listening on 127.0.0.1:58665
+1643303879499	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58666" "-no-remote" "-profile" "C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofilenitB5N"
+1643303880033	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofilenitB5N\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58666/devtools/browser/a4bcd9cc-c8c7-4194-9367-59fa10908ba7
+1643303882782	Marionette	INFO	Listening on port 58671
+1643303883193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643303886169	Marionette	INFO	Stopped listening on port 58671
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643303919751	geckodriver	INFO	Listening on 127.0.0.1:58735
+1643303922802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58736" "-no-remote" "-profile" "C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofile3D6HUu"
+1643303923319	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jasbuc\\AppData\\Local\\Temp\\rust_mozprofile3D6HUu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58736/devtools/browser/667ab95f-5659-4bd1-8d33-de58f915fabd
+1643303925916	Marionette	INFO	Listening on port 58742
+1643303925971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643303929206	Marionette	INFO	Stopped listening on port 58742
