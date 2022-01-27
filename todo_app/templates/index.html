@@ -9,14 +9,22 @@
 
 <div class="row">
   <div class="col-md-12">
-    <h2>Items</h2>
+    <h2>To Do Items</h2>
     <ul class="list-group mb-4">
-      {% for item in items %}
-      <li>{{item.status}} - {{item.name}}
-        {% if item.status == 'To Do'%}
-          <a href="{{ url_for('complete_item_route',id=item.id) }}">Mark as done</a>
-        {% endif %}
-      </li>
+      {% for item in view_model.to_do_items %}
+      <li>{{item.status}} - {{item.name}} <a href="{{ url_for('complete_item_route',id=item.id) }}">Mark as done</a></li>
+      {% endfor %}
+    </ul>
+    <h2>Doing Items</h2>
+    <ul class="list-group mb-4">
+      {% for item in view_model.doing_items %}
+      <li>{{item.status}} - {{item.name}}</li>
+      {% endfor %}
+    </ul>
+    <h2>Done Items</h2>
+    <ul class="list-group mb-4">
+      {% for item in view_model.done_items %}
+      <li>{{item.status}} - {{item.name}}</li>
       {% endfor %}
     </ul>
   </div>

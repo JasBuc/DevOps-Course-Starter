@@ -52,3 +52,9 @@ You should see output similar to the following:
  * Debugger PIN: 226-556-590
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
+
+
+## Running tests
+
+To run tests from the terminal run `poetry run pytest tests` or `poetry run pytest path/to/test_file` or use VS code's test suite.
+To run Selenium tests run `poetry run pytest tests_e2e`.

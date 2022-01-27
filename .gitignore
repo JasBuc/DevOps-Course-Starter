@@ -118,3 +118,9 @@ env/
 
 ### Configuration files ###
 .env
+
+### VS Code
+.vscode
+
+### Log files
+*.log
