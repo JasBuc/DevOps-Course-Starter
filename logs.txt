@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/vagrant/.poetry/bin/poetry", line 17, in <module>
+    from poetry.console import main
+  File "/home/vagrant/.poetry/lib/poetry/console/__init__.py", line 1, in <module>
+    from .application import Application
+  File "/home/vagrant/.poetry/lib/poetry/console/application.py", line 7, in <module>
+    from .commands.about import AboutCommand
+  File "/home/vagrant/.poetry/lib/poetry/console/commands/__init__.py", line 4, in <module>
+    from .check import CheckCommand
+  File "/home/vagrant/.poetry/lib/poetry/console/commands/check.py", line 2, in <module>
+    from poetry.factory import Factory
+  File "/home/vagrant/.poetry/lib/poetry/factory.py", line 18, in <module>
+    from .repositories.pypi_repository import PyPiRepository
+  File "/home/vagrant/.poetry/lib/poetry/repositories/pypi_repository.py", line 33, in <module>
+    from ..inspection.info import PackageInfo
+  File "/home/vagrant/.poetry/lib/poetry/inspection/info.py", line 25, in <module>
+    from poetry.utils.env import EnvCommandError
+  File "/home/vagrant/.poetry/lib/poetry/utils/env.py", line 21, in <module>
+    import packaging.tags
+  File "/home/vagrant/.poetry/lib/poetry/_vendor/py3.6/poetry/core/_vendor/packaging/tags.py", line 7, in <module>
+    import distutils.util
+ModuleNotFoundError: No module named 'distutils.util'
