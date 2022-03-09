@@ -53,6 +53,8 @@ You should see output similar to the following:
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
 
+The app can also be run in a virtual machine via the `vagrant up` command. Again you can visit `http://localhost:5000/` to view the app.
+
 
 ## Running tests
 
